@@ -56,7 +56,7 @@ configure :development do
   set :awsregion => ENV['AWS_REGION']
 end
 configure :custom do
-  set :redishost, ENV['REDIS_SERVER_ENDPOINT']
+  set :redishost, "redis-server"
   set :port, 4567
   set :yelbdbhost => ENV['YELB_DB_SERVER_ENDPOINT']
   set :yelbdbport => 5432
