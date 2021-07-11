@@ -1,0 +1,11 @@
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+    name: "redis-server" 
+subsets: 
+    - addresses:
+      - ip: "192.168.2.16"
+      ports:
+      - port: 6379
+        name: "redis-server"
+

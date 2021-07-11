@@ -1,0 +1,13 @@
+kind: "Service"
+apiVersion: "v1"
+metadata:
+    name: "redis-server"
+spec:
+    ports:
+    - name: "redis-server"
+      protocol: "TCP"
+      port: 6379
+      targetPort: 6379
+      nodePort: 0
+    selector: {}
+
